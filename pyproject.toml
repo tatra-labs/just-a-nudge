@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "just-a-nudge"
+version = "0.1.0"
+description = "Is RL post-training of a diffusion transformer just a constant nudge? A from-scratch toy test of arXiv 2611.26627"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.26", "torch>=2.4"]
+
+[project.optional-dependencies]
+data = ["torchvision>=0.19"]
+figures = ["matplotlib>=3.8"]
+test = ["pytest>=8"]
+
+[tool.setuptools]
+packages = ["just_a_nudge"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

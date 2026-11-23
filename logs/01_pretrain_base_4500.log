@@ -1,0 +1,11 @@
+base step 0/4500 loss 1.9243 (1s)
+base step 500/4500 loss 0.3090 (82s)
+base step 1000/4500 loss 0.2710 (164s)
+base step 1500/4500 loss 0.2648 (242s)
+base step 2000/4500 loss 0.2685 (328s)
+base step 2500/4500 loss 0.2435 (426s)
+base step 3000/4500 loss 0.2430 (522s)
+base step 3500/4500 loss 0.2364 (608s)
+base step 4000/4500 loss 0.2240 (694s)
+base step 4499/4500 loss 0.1967 (779s)
+{'base_params': 3450512, 'base_steps': 4500, 'base_batch': 128}

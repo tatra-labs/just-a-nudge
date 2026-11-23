@@ -1,0 +1,13 @@
+data/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+checkpoints/*/rl_samples.pt
+logs/*stdout*.txt
+logs/*stderr*.txt
+checkpoints/base_2000.pt
+checkpoints/base_3000.pt
+checkpoints/base_20k.pt
+logs/pytest_local.txt
+logs/report_err.txt

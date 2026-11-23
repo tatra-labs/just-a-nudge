@@ -1,0 +1,4 @@
+=== upright {'reward': 'upright', 'tag': '', 'base': 'base.pt', 'cfg': 4.5, 'rl_updates': 300, 'rl_lr': 0.0003, 'lora_rank': 32, 'beta_kl': 0.04, 'steer_rl_updates': 300, 'steer_rl_lr': 0.005, 'fit_updates': 3000, 'fit_lr': 0.003, 'cache_per_prompt': 4, 'eval_per_prompt': 8, 'skip_steer_rl': False}
+[upright] update 0 reward -0.1295 kl 0.00010 eval {'match': 0.9056, 'exact_B': 0.8933, 'weight_ok': 0.9433, 'legible': 0.9999, 'correct_B': 1.0, 'upright': -0.1573, 'ink': 1.1399} (8s)
+[upright] update 10 reward -0.1127 kl 0.00073  (58s)
+[upright] update 20 reward -0.1050 kl 0.00093  (107s)

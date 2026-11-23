@@ -1,0 +1,8 @@
+{
+  "base_params": 3450512,
+  "base_steps": 6000,
+  "base_batch": 128,
+  "classifier_A_mnist_test_acc": 0.9911,
+  "classifier_B_mnist_test_acc": 0.9864,
+  "note": "base.pt = this 6000-step run (LR decayed to 10% at the end); classifiers trained once, in the first pretraining run"
+}

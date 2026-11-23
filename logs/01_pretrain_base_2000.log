@@ -1,0 +1,6 @@
+base step 0/2000 loss 1.9243 (1s)
+base step 500/2000 loss 0.3149 (83s)
+base step 1000/2000 loss 0.2723 (176s)
+base step 1500/2000 loss 0.2674 (268s)
+base step 1999/2000 loss 0.2731 (356s)
+{'base_params': 3450512, 'base_steps': 2000, 'base_batch': 128}

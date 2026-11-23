@@ -1,0 +1,47 @@
+{
+  "1.0": {
+    "match": 0.6964,
+    "exact_B": 0.53,
+    "weight_ok": 0.8008,
+    "legible": 0.8995,
+    "correct_B": 0.835,
+    "upright": -0.2017,
+    "ink": 1.0475
+  },
+  "2.0": {
+    "match": 0.8883,
+    "exact_B": 0.865,
+    "weight_ok": 0.9342,
+    "legible": 0.9946,
+    "correct_B": 0.99,
+    "upright": -0.1853,
+    "ink": 1.1138
+  },
+  "3.0": {
+    "match": 0.9032,
+    "exact_B": 0.8967,
+    "weight_ok": 0.9483,
+    "legible": 0.9995,
+    "correct_B": 1.0,
+    "upright": -0.1794,
+    "ink": 1.1354
+  },
+  "4.5": {
+    "match": 0.9095,
+    "exact_B": 0.915,
+    "weight_ok": 0.9575,
+    "legible": 0.9997,
+    "correct_B": 1.0,
+    "upright": -0.1771,
+    "ink": 1.1401
+  },
+  "6.0": {
+    "match": 0.9136,
+    "exact_B": 0.9167,
+    "weight_ok": 0.9583,
+    "legible": 0.9998,
+    "correct_B": 1.0,
+    "upright": -0.1755,
+    "ink": 1.1353
+  }
+}

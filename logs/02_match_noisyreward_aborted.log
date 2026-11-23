@@ -1,0 +1,4 @@
+=== match {'reward': 'match', 'tag': '', 'base': 'base.pt', 'cfg': 4.5, 'rl_updates': 300, 'rl_lr': 0.0003, 'lora_rank': 32, 'beta_kl': 0.04, 'steer_rl_updates': 300, 'steer_rl_lr': 0.005, 'fit_updates': 3000, 'fit_lr': 0.003, 'cache_per_prompt': 4, 'eval_per_prompt': 8, 'skip_steer_rl': False}
+[match] update 0 reward 0.6994 kl 0.00011 eval {'match': 0.9196, 'exact_B': 0.9267, 'weight_ok': 0.96, 'legible': 0.9999, 'correct_B': 1.0, 'upright': -0.1607, 'ink': 1.1378} (9s)
+[match] update 10 reward 0.9049 kl 0.00110  (59s)
+[match] update 20 reward 0.9406 kl 0.00148  (108s)
