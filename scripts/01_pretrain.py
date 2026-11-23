@@ -13,7 +13,7 @@ from just_a_nudge.pretrain import train_base  # noqa: E402
 from just_a_nudge.rewards import ClassifierA, ClassifierB, accuracy, train_classifier  # noqa: E402
 
 ap = argparse.ArgumentParser()
-ap.add_argument("--steps", type=int, default=20000)
+ap.add_argument("--steps", type=int, default=6000)  # 20000 saturates the rewards; see README
 ap.add_argument("--batch", type=int, default=128)
 ap.add_argument("--skip-classifiers", action="store_true")
 ap.add_argument("--snapshots", default="", help="comma-separated steps at which to save EMA snapshots")

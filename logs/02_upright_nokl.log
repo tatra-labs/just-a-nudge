@@ -1,0 +1,120 @@
+=== upright_nokl {'reward': 'upright', 'tag': 'nokl', 'base': 'base.pt', 'cfg': 4.5, 'rl_updates': 300, 'rl_lr': 0.0003, 'lora_rank': 32, 'beta_kl': 0.0, 'steer_rl_updates': 300, 'steer_rl_lr': 0.005, 'fit_updates': 3000, 'fit_lr': 0.003, 'cache_per_prompt': 4, 'eval_per_prompt': 8, 'skip_steer_rl': False}
+[upright] update 0 reward -0.1550 kl 0.00000 eval {'match': 0.9056, 'exact_B': 0.8867, 'weight_ok': 0.94, 'legible': 0.9999, 'correct_B': 1.0, 'upright': -0.1575, 'ink': 1.1402} (5s)
+[upright] update 10 reward -0.1312 kl 0.00000  (34s)
+[upright] update 20 reward -0.1166 kl 0.00000  (64s)
+[upright] update 30 reward -0.0761 kl 0.00000  (92s)
+[upright] update 40 reward -0.0757 kl 0.00000  (120s)
+[upright] update 50 reward -0.0552 kl 0.00000 eval {'match': 0.8643, 'exact_B': 0.82, 'weight_ok': 0.91, 'legible': 0.9999, 'correct_B': 1.0, 'upright': -0.0695, 'ink': 1.1308} (151s)
+[upright] update 60 reward -0.0603 kl 0.00000  (180s)
+[upright] update 70 reward -0.0564 kl 0.00000  (210s)
+[upright] update 80 reward -0.0449 kl 0.00000  (240s)
+[upright] update 90 reward -0.0410 kl 0.00000  (270s)
+[upright] update 100 reward -0.0407 kl 0.00000 eval {'match': 0.8443, 'exact_B': 0.7867, 'weight_ok': 0.89, 'legible': 0.9998, 'correct_B': 1.0, 'upright': -0.0424, 'ink': 1.0912} (299s)
+[upright] update 110 reward -0.0361 kl 0.00000  (327s)
+[upright] update 120 reward -0.0329 kl 0.00000  (356s)
+[upright] update 130 reward -0.0339 kl 0.00000  (385s)
+[upright] update 140 reward -0.0320 kl 0.00000  (415s)
+[upright] update 150 reward -0.0322 kl 0.00000 eval {'match': 0.7685, 'exact_B': 0.6133, 'weight_ok': 0.79, 'legible': 0.9996, 'correct_B': 1.0, 'upright': -0.032, 'ink': 1.1076} (446s)
+[upright] update 160 reward -0.0205 kl 0.00000  (475s)
+[upright] update 170 reward -0.0240 kl 0.00000  (503s)
+[upright] update 180 reward -0.0252 kl 0.00000  (532s)
+[upright] update 190 reward -0.0285 kl 0.00000  (560s)
+[upright] update 200 reward -0.0221 kl 0.00000 eval {'match': 0.7402, 'exact_B': 0.5533, 'weight_ok': 0.7667, 'legible': 0.9985, 'correct_B': 0.9933, 'upright': -0.0266, 'ink': 1.1336} (589s)
+[upright] update 210 reward -0.0227 kl 0.00000  (617s)
+[upright] update 220 reward -0.0225 kl 0.00000  (646s)
+[upright] update 230 reward -0.0212 kl 0.00000  (675s)
+[upright] update 240 reward -0.0189 kl 0.00000  (704s)
+[upright] update 250 reward -0.0213 kl 0.00000 eval {'match': 0.7072, 'exact_B': 0.54, 'weight_ok': 0.74, 'legible': 0.9986, 'correct_B': 1.0, 'upright': -0.021, 'ink': 1.1409} (735s)
+[upright] update 260 reward -0.0219 kl 0.00000  (765s)
+[upright] update 270 reward -0.0212 kl 0.00000  (794s)
+[upright] update 280 reward -0.0181 kl 0.00000  (824s)
+[upright] update 290 reward -0.0205 kl 0.00000  (856s)
+[upright] update 299 reward -0.0194 kl 0.00000 eval {'match': 0.6366, 'exact_B': 0.3867, 'weight_ok': 0.6367, 'legible': 0.9986, 'correct_B': 0.9933, 'upright': -0.02, 'ink': 1.1665} (883s)
+RL sample cache: 3000 final samples, 256 trajectories
+  velocity matching 0/3000 loss 0.040551 (0s)
+  velocity matching 250/3000 loss 0.013351 (36s)
+  velocity matching 500/3000 loss 0.010886 (71s)
+  velocity matching 750/3000 loss 0.010465 (104s)
+  velocity matching 1000/3000 loss 0.010538 (136s)
+  velocity matching 1250/3000 loss 0.008495 (167s)
+  velocity matching 1500/3000 loss 0.009315 (199s)
+  velocity matching 1750/3000 loss 0.008492 (231s)
+  velocity matching 2000/3000 loss 0.009335 (262s)
+  velocity matching 2250/3000 loss 0.009006 (294s)
+  velocity matching 2500/3000 loss 0.008671 (326s)
+  velocity matching 2750/3000 loss 0.008824 (357s)
+  velocity matching 2999/3000 loss 0.009397 (389s)
+s_fit ready
+s_mean / s_rand ready
+  velocity matching 0/3000 loss 0.040551 (0s)
+  velocity matching 250/3000 loss 0.004618 (35s)
+  velocity matching 500/3000 loss 0.003782 (73s)
+  velocity matching 750/3000 loss 0.003789 (123s)
+  velocity matching 1000/3000 loss 0.003756 (168s)
+  velocity matching 1250/3000 loss 0.003171 (217s)
+  velocity matching 1500/3000 loss 0.003435 (263s)
+  velocity matching 1750/3000 loss 0.003184 (298s)
+  velocity matching 2000/3000 loss 0.003333 (337s)
+  velocity matching 2250/3000 loss 0.003407 (373s)
+  velocity matching 2500/3000 loss 0.003226 (408s)
+  velocity matching 2750/3000 loss 0.003276 (444s)
+  velocity matching 2999/3000 loss 0.003398 (491s)
+same-size LoRA ready
+[upright] update 0 reward -0.1550 kl 0.00000 eval {'match': 0.8023, 'exact_B': 0.68, 'weight_ok': 0.82, 'legible': 0.9999, 'correct_B': 1.0, 'upright': -0.1322, 'ink': 1.1937} (4s)
+[upright] update 10 reward -0.1575 kl 0.00000  (30s)
+[upright] update 20 reward -0.1550 kl 0.00000  (51s)
+[upright] update 30 reward -0.0994 kl 0.00000  (71s)
+[upright] update 40 reward -0.1226 kl 0.00000  (90s)
+[upright] update 50 reward -0.1102 kl 0.00000 eval {'match': 0.8217, 'exact_B': 0.7333, 'weight_ok': 0.86, 'legible': 0.9998, 'correct_B': 1.0, 'upright': -0.1063, 'ink': 1.1756} (111s)
+[upright] update 60 reward -0.1029 kl 0.00000  (131s)
+[upright] update 70 reward -0.0973 kl 0.00000  (149s)
+[upright] update 80 reward -0.0851 kl 0.00000  (168s)
+[upright] update 90 reward -0.0788 kl 0.00000  (187s)
+[upright] update 100 reward -0.0905 kl 0.00000 eval {'match': 0.6235, 'exact_B': 0.3867, 'weight_ok': 0.61, 'legible': 0.9993, 'correct_B': 1.0, 'upright': -0.0758, 'ink': 1.2416} (206s)
+[upright] update 110 reward -0.0699 kl 0.00000  (224s)
+[upright] update 120 reward -0.0740 kl 0.00000  (243s)
+[upright] update 130 reward -0.0612 kl 0.00000  (263s)
+[upright] update 140 reward -0.0639 kl 0.00000  (282s)
+[upright] update 150 reward -0.0661 kl 0.00000 eval {'match': 0.6516, 'exact_B': 0.4267, 'weight_ok': 0.6467, 'legible': 0.9988, 'correct_B': 1.0, 'upright': -0.0588, 'ink': 1.236} (303s)
+[upright] update 160 reward -0.0510 kl 0.00000  (322s)
+[upright] update 170 reward -0.0440 kl 0.00000  (341s)
+[upright] update 180 reward -0.0432 kl 0.00000  (361s)
+[upright] update 190 reward -0.0422 kl 0.00000  (380s)
+[upright] update 200 reward -0.0391 kl 0.00000 eval {'match': 0.7048, 'exact_B': 0.5067, 'weight_ok': 0.6967, 'legible': 0.9902, 'correct_B': 0.9933, 'upright': -0.0412, 'ink': 1.185} (401s)
+[upright] update 210 reward -0.0332 kl 0.00000  (420s)
+[upright] update 220 reward -0.0351 kl 0.00000  (439s)
+[upright] update 230 reward -0.0316 kl 0.00000  (458s)
+[upright] update 240 reward -0.0348 kl 0.00000  (478s)
+[upright] update 250 reward -0.0312 kl 0.00000 eval {'match': 0.6685, 'exact_B': 0.46, 'weight_ok': 0.68, 'legible': 0.9861, 'correct_B': 0.9933, 'upright': -0.0385, 'ink': 1.1952} (498s)
+[upright] update 260 reward -0.0372 kl 0.00000  (518s)
+[upright] update 270 reward -0.0333 kl 0.00000  (537s)
+[upright] update 280 reward -0.0286 kl 0.00000  (556s)
+[upright] update 290 reward -0.0344 kl 0.00000  (576s)
+[upright] update 299 reward -0.0324 kl 0.00000 eval {'match': 0.778, 'exact_B': 0.68, 'weight_ok': 0.8367, 'legible': 0.9693, 'correct_B': 0.9733, 'upright': -0.0346, 'ink': 1.1242} (594s)
+velocity gap closed: {'s_fit': {'cond': 0.7968568995179949, 'uncond': 0.8095449125309901}, 's_mean': {'cond': 0.2831840809117292, 'uncond': 0.26759702635327753}, 'lora2': {'cond': 0.9228873152748385, 'uncond': 0.9243523037822022}}
+eval base: {'match': 0.9104107618331909, 'exact_B': 0.9083333611488342, 'weight_ok': 0.95333331823349, 'legible': 0.9998205304145813, 'correct_B': 0.9991666674613953, 'upright': -0.1737547218799591, 'ink': 1.1387050151824951}
+eval rl_lora: {'match': 0.6364356875419617, 'exact_B': 0.40666666626930237, 'weight_ok': 0.6449999809265137, 'legible': 0.9959564208984375, 'correct_B': 0.9933333396911621, 'upright': -0.01782839372754097, 'ink': 1.1648305654525757}
+eval s_fit: {'match': 0.7410827875137329, 'exact_B': 0.5791666507720947, 'weight_ok': 0.76583331823349, 'legible': 0.9970999360084534, 'correct_B': 0.9900000095367432, 'upright': -0.04441622272133827, 'ink': 1.167054295539856}
+eval s_mean: {'match': 0.9094108939170837, 'exact_B': 0.925000011920929, 'weight_ok': 0.9620833396911621, 'legible': 0.9991192817687988, 'correct_B': 1.0, 'upright': -0.10394544899463654, 'ink': 1.1263245344161987}
+eval s_rand: {'match': 0.0481499545276165, 'exact_B': 0.0, 'weight_ok': 0.33375000953674316, 'legible': 0.21225008368492126, 'correct_B': 0.015833333134651184, 'upright': -0.05819353833794594, 'ink': 1.654499888420105}
+eval lora2_fit: {'match': 0.6764581203460693, 'exact_B': 0.4541666805744171, 'weight_ok': 0.6858333349227905, 'legible': 0.9971619844436646, 'correct_B': 0.9950000047683716, 'upright': -0.027676014229655266, 'ink': 1.1591800451278687}
+eval s_rl: {'match': 0.7909143567085266, 'exact_B': 0.6433333158493042, 'weight_ok': 0.82833331823349, 'legible': 0.9765872955322266, 'correct_B': 0.9674999713897705, 'upright': -0.03432340547442436, 'ink': 1.1197885274887085}
+eval abl_cond_only: {'match': 0.44385695457458496, 'exact_B': 0.13750000298023224, 'weight_ok': 0.4350000023841858, 'legible': 0.9708091020584106, 'correct_B': 0.8849999904632568, 'upright': -0.02382640168070793, 'ink': 1.262790560722351}
+eval abl_uncond_only: {'match': 0.6049088835716248, 'exact_B': 0.3608333468437195, 'weight_ok': 0.6212499737739563, 'legible': 0.9865427613258362, 'correct_B': 0.9708333611488342, 'upright': -0.2280968278646469, 'ink': 1.3224893808364868}
+eval abl_early_only: {'match': 0.8929861187934875, 'exact_B': 0.8841666579246521, 'weight_ok': 0.9437500238418579, 'legible': 0.9985929131507874, 'correct_B': 0.9941666722297668, 'upright': -0.05518258363008499, 'ink': 1.1102911233901978}
+eval abl_late_only: {'match': 0.7984652519226074, 'exact_B': 0.699999988079071, 'weight_ok': 0.8370833396911621, 'legible': 0.9998385906219482, 'correct_B': 0.9991666674613953, 'upright': -0.15088020265102386, 'ink': 1.1961009502410889}
+eval abl_text_only: {'match': 0.7364880442619324, 'exact_B': 0.5716666579246521, 'weight_ok': 0.7616666555404663, 'legible': 0.9990024566650391, 'correct_B': 0.9991666674613953, 'upright': -0.10543181002140045, 'ink': 1.2096117734909058}
+eval abl_image_only: {'match': 0.9039217233657837, 'exact_B': 0.9008333086967468, 'weight_ok': 0.9504166841506958, 'legible': 0.9982167482376099, 'correct_B': 0.996666669845581, 'upright': -0.1048867255449295, 'ink': 1.0715734958648682}
+eval abl_cond_text_early: {'match': 0.8715493679046631, 'exact_B': 0.8358333110809326, 'weight_ok': 0.9166666865348816, 'legible': 0.9987253546714783, 'correct_B': 0.9983333349227905, 'upright': -0.1013021245598793, 'ink': 1.1467584371566772}
+eval abl_blocks_0-2: {'match': 0.8940350413322449, 'exact_B': 0.8974999785423279, 'weight_ok': 0.9491666555404663, 'legible': 0.9844145774841309, 'correct_B': 0.9950000047683716, 'upright': -0.07323198020458221, 'ink': 1.0150938034057617}
+eval abl_blocks_3-5: {'match': 0.4194624125957489, 'exact_B': 0.14749999344348907, 'weight_ok': 0.3916666805744171, 'legible': 0.9991350173950195, 'correct_B': 0.9958333373069763, 'upright': -0.11371421813964844, 'ink': 1.4176868200302124}
+eval cfg_1: {'match': 0.6970701217651367, 'exact_B': 0.5425000190734863, 'weight_ok': 0.8079166412353516, 'legible': 0.8979170918464661, 'correct_B': 0.8341666460037231, 'upright': -0.20235112309455872, 'ink': 1.0503394603729248}
+eval cfg_2: {'match': 0.8834863305091858, 'exact_B': 0.8616666793823242, 'weight_ok': 0.9320833086967468, 'legible': 0.9945226907730103, 'correct_B': 0.9950000047683716, 'upright': -0.18394604325294495, 'ink': 1.113466501235962}
+eval cfg_4: {'match': 0.9081798195838928, 'exact_B': 0.8949999809265137, 'weight_ok': 0.9470833539962769, 'legible': 0.9997731447219849, 'correct_B': 0.9983333349227905, 'upright': -0.1748516708612442, 'ink': 1.1390893459320068}
+eval cfg_5: {'match': 0.9109979271888733, 'exact_B': 0.9041666388511658, 'weight_ok': 0.9516666531562805, 'legible': 0.9998363256454468, 'correct_B': 1.0, 'upright': -0.1729414165019989, 'ink': 1.1376149654388428}
+eval cfg_6: {'match': 0.9126841425895691, 'exact_B': 0.9100000262260437, 'weight_ok': 0.9549999833106995, 'legible': 0.9998157024383545, 'correct_B': 0.9991666674613953, 'upright': -0.17217682301998138, 'ink': 1.1340124607086182}
+eval cfg_8: {'match': 0.9110249876976013, 'exact_B': 0.9116666913032532, 'weight_ok': 0.9545833468437195, 'legible': 0.999462902545929, 'correct_B': 0.9991666674613953, 'upright': -0.17148369550704956, 'ink': 1.1273469924926758}
+eval kvreset_rl_lora: {'match': 0.8681291937828064, 'exact_B': 0.8508333563804626, 'weight_ok': 0.9229166507720947, 'legible': 0.9992879033088684, 'correct_B': 0.9991666674613953, 'upright': -0.03478794917464256, 'ink': 1.1090792417526245}
+eval kvreset_s_fit: {'match': 0.910430908203125, 'exact_B': 0.9175000190734863, 'weight_ok': 0.9595833420753479, 'legible': 0.9985134601593018, 'correct_B': 0.9975000023841858, 'upright': -0.10747682303190231, 'ink': 1.0757293701171875}
+shares: {'s_fit': 82.9, 's_mean': 44.8, 's_rand': 74.1, 'lora2_fit': 93.7, 's_rl': 89.4, 'abl_cond_only': 96.2, 'abl_uncond_only': -34.9, 'abl_early_only': 76.0, 'abl_late_only': 14.7, 'abl_text_only': 43.8, 'abl_image_only': 44.2, 'abl_cond_text_early': 46.5, 'abl_blocks_0-2': 64.5, 'abl_blocks_3-5': 38.5, 'cfg_1': -18.3, 'cfg_2': -6.5, 'cfg_4': -0.7, 'cfg_5': 0.5, 'cfg_6': 1.0, 'cfg_8': 1.5, 'kvreset_rl_lora': 89.1, 'kvreset_s_fit': 42.5}
+done in 49.7 min

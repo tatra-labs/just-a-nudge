@@ -1,7 +1,7 @@
 # just-a-nudge
 
 **Is RL post-training of a diffusion transformer just a constant nudge to its activations?** A recent paper
-says yes: on SD3.5, FLUX and Wan, 90-96% of what Flow-GRPO adds comes back from a few hundred constant
+says yes: on SD3.5, FLUX and Wan, 90-96% of what Flow-GRPO adds comes back from fewer than 200 constant
 vectors added to the frozen base model's block outputs. This repo rebuilds that experiment from nothing
 (a 3.45M-parameter MM-DiT, MNIST, Flow-GRPO, a laptop GPU) to see whether the claim survives at a scale anyone
 can rerun in a couple of hours.
@@ -120,7 +120,26 @@ fitted vectors, base + RL-trained vectors, base + mean-difference vectors, base 
 [`figures/match_grid.png`](figures/match_grid.png), and the RL training curves are in
 [`figures/rl_curves.png`](figures/rl_curves.png).
 
-<!-- VARIANTS -->
+### Two variants
+
+| share of the RL gain (95% CI) | match, **weak base** (4,500 steps) | upright, **no KL** |
+|---|---|---|
+| base -> RL-tuned reward | 0.312 -> 0.347 (+0.036) | -0.174 -> -0.018 (+0.156) |
+| exact prompt match, base -> RL | 7.7% -> 10.2% | 90.8% -> **40.7%** |
+| fitted vectors | 25.1% [8.2, 37.7] | 82.9% [81.5, 84.3] |
+| vectors trained by Flow-GRPO from zero | -16.9% [-41.6, 3.1] | 89.4% [88.4, 90.4] |
+| same-size LoRA, fitted | 63.9% [51.3, 75.9] | 93.7% [92.8, 94.5] |
+| random vectors, same norms | -94.9% | 74.1% (legibility falls to 21%) |
+
+- **Weak base: where the capability is missing, the nudge fails.** On a base that draws the right digit only 59%
+  of the time, the same RL budget adds little (+0.036), and constant vectors recover a quarter of it while
+  RL on the vectors alone recovers nothing. This fits the paper's reading that RL steers the generator toward
+  what it can already do, though the RL gain here is small.
+- **No KL: recovery rises, because the gain becomes a hack.** Without the KL term, RL straightens digits much
+  further but wrecks prompt following (exact match 90.8% -> 40.7%). The vectors now recover 83-89% (the
+  paper's no-KL PickScore row: 95.2%), but random vectors also get 74% by destroying the digits, so a high share
+  on a hacked reward says little.
+
 
 ## Things this toy had to get right
 
@@ -168,9 +187,11 @@ laptop GPU.
 
 ```bash
 pip install -e ".[data,figures,test]"
-python scripts/01_pretrain.py             # classifiers (2 min) + base MM-DiT (20k steps, ~1 h)
-python scripts/02_run.py --reward match   # Flow-GRPO, vector fits, controls, evaluation
+python scripts/01_pretrain.py             # classifiers (2 min) + base MM-DiT (6,000 steps, ~17 min)
+python scripts/02_run.py --reward match   # Flow-GRPO, vector fits, controls, evaluation (~65 min)
 python scripts/02_run.py --reward upright
+python scripts/02_run.py --reward match --base base_4500.pt --tag weakbase  # base from 01_pretrain.py --steps 4500 --out base_4500.pt
+python scripts/02_run.py --reward upright --beta-kl 0 --tag nokl
 python scripts/03_figures.py              # figures/
 python scripts/04_report.py               # results/tables.md (every number quoted above)
 pytest -q                                 # 13 CPU tests, ~30 s
